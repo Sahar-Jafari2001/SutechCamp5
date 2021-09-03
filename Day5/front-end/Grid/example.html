@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Shabnam;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 2fr;
+            grid-template-areas:
+                "welcome welcome welcome"
+                "name introduction hope";
+            /* padding: 30px; */
+            grid-gap: 10px;
+            /* align-items: center; */
+            position: fixed;
+            height: auto;
+            width: 100vw;
+        }
+
+        
+        
+        .wrapper>div:nth-child(odd){
+            background-color: aqua;
+        }
+        .wrapper>div:nth-child(even){
+            background-color: rgb(231, 111, 241);
+        }
+        .welcome{
+            grid-area: welcome;
+            grid-row: 1/4;
+        }
+        .name{
+            grid-area: name;
+        }
+        .introduction{
+            grid-area: introduction;
+        }
+        .hope{
+            grid-area: hope;
+        }
+
+        .wrapper>div {
+            padding: 10px;
+            text-align: center;}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="welcome">
+            welcome to my diary...
+            
+        </div>
+
+        <div class="name">
+            My name is Sahar
+            
+        </div>
+
+        <div class="introduction">
+            I'm a computer engineering student
+        </div>
+
+        <div class="hope">
+            Hope to enjoy my diary
+            
+        </div>
+        
+    </div>
+</body>
+</html>
