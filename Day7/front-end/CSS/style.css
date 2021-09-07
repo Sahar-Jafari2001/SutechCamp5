@@ -1,0 +1,55 @@
+body,*{
+    font-family: Shabnam;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/* holder safhe ma */
+.page-containor{
+    background-image:url('') ;
+    background-size:100% auto ;
+    /* dge aks tekrar nemishe */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+
+}
+.flex-containor{
+    max-width: 550px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.logout-btn{
+    display: block;
+    background-color: white;
+    width: 50px;
+    height: 55px;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    color: white;
+}
+.header-info h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.user-info{
+    font-weight: 300px;
+    font-size: 15px;
+}
+.new-todo{
+    
+}

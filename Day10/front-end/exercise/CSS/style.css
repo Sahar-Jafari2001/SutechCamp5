@@ -1,0 +1,45 @@
+input,label,span{
+    display: block;
+    margin-bottom: 10px;
+}
+body,*{
+    font-family: Shabnam;
+}
+.row{
+    margin-top: 15px;
+}
+.btn{
+    background-color: #4011f02e;
+}
+.btn.btn-danger{
+    border: none;
+    background-color: #00ffff00;
+}
+.btn-group{
+    background-color: #212529;
+    border-radius: 50px;
+    border: none;
+}
+.btn.btn-outline-success{
+    font-size: 12px;
+    background-color: #ecb8ea;
+}
+body{
+    margin: 0;
+}
+/* .row{
+    margin: 0;
+} */
+body{
+    position: relative;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+.box:nth-child(1){
+    margin-top: 80px;
+}
