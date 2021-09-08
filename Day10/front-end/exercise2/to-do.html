@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تودو!</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body dir="rtl">
+    <div class="overlay">
+        نکن! بخدا رسپانسیو هست :)
+    </div>
+    <div class="vip-offer">
+        <h2>ویژه شوید!</h2>
+        <p>با خرید اشتراک ویژه از تمامی امکانات سامانه بهره مند شوید.</p>
+    </div>
+    <div class="page-container animate__animated animate__fadeInDown">
+        <div class="flex-container">
+            <header>
+                <div class="header-info">
+                    <h1>تودو!</h1>
+                    <div class="user-info">خوش آمدید، عباس مهربانیان</div>
+                </div>
+                <a href="#" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </header>
+
+            <form>
+                <div class="input-wrapper">
+                    <input type="text" name="todo" id="todo" placeholder="یک کار جدید اضافه کن ;)" class="new-todo"
+                        required>
+                </div>
+                <button type="button" class="add-todo">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </form>
+
+
+            <div class="todo-list-container">
+                <ul class="list animate__animated animate__fadeInDown">
+                    <!-- <li class="todo-item">
+                        <div class="desc">
+                            یک متن برای انجام دادن.
+                        </div>
+                        <div class="options">
+                            <button class="todo-btn">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="fas fa-check"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="todo-item">
+                        <div class="desc">
+                            یک متن برای انجام دادن.
+                        </div>
+                        <div class="options">
+                            <button class="todo-btn">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="fas fa-check"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="todo-item">
+                        <div class="desc">
+                            یک متن برای انجام دادن.
+                        </div>
+                        <div class="options">
+                            <button class="todo-btn">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="fas fa-check"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="todo-item done">
+                        <div class="desc">
+                            یک متن برای انجام دادن.
+                        </div>
+                        <div class="options">
+                            <button class="todo-btn">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="far fa-edit"></i>
+                            </button>
+                            <button class="todo-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // var count = 0;
+        // $(window).resize(function () {
+        //     // Wrong!!!
+        //     // $('.overlay').show().delay(1000).fadeOut();
+        //     count++;
+        //     if (count >= 3) {
+        //         $('.overlay').css('display', 'flex').delay(1000).fadeOut();
+        //         count = 0;
+        //     }
+        // });
+
+        function makeItem(inp) {
+            return '<li class="todo-item animate__animated animate__fadeInDown"><div class="desc">'
+                + inp
+                + '</div> <div class="options"> <button class="todo-btn trash"> <i class="far fa-trash-alt"></i>'
+                + ' </button> <button class="todo-btn"> <i class="far fa-edit"></i> </button> <button class="todo-btn">'
+                + '<i class="fas fa-check"></i> </button> </div></li>';
+        }
+
+        $(document).ready(function () {
+            $('.add-todo').click(function () {
+                if ($('#todo').val() != '') {
+                    $('ul.list').prepend(makeItem($('#todo').val()));
+                    $('#todo').val('');
+                }
+            });
+
+            
+            // $().on('click','.todo-btn.trash',function(e){
+            //     e.preventDefault();
+
+            //     $(this).parent().remove();
+            // })
+
+            $('.todo-btn.trash').click(function(){
+                // $(this).parent().remove();
+                $(this).parent().parent().css('display',none);
+            });
+        });
+    </script>
+</body>
+
+</html>
