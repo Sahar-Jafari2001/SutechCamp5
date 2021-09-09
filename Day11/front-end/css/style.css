@@ -1,0 +1,126 @@
+body,*{
+    font-family: Shabnam;
+}
+body{
+    margin: 0;
+}
+/* Bootstrap customization start */
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1200px;
+    }
+}
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 300;
+    font-size: 15px;
+}
+/* Bootstrap customization end */
+
+header{
+    padding: 35px 0;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-right .search-bar{
+    width: 100%;
+    /* flex-grow:1; */
+    margin-right: 20px;
+    position: relative;
+}
+.header-right .search-bar input{
+    border: none;
+    padding: 10px 18px;
+    background: rgb(248 249 250);
+}
+.header-right .search-bar input::placeholder{
+    font-weight: 200;
+    font-size: 15px;
+    color: rgb(187, 187, 187);
+}
+.header-right .search-bar input:focus{
+    border-color: #a2a2a2;
+    box-shadow: 0 0 0 0.25rem rgb(175 175 175 / 25%);
+    background-color: #fff;
+}
+.header-right .search-bar::after{
+    font-family: "Font Awesome 5 Free";
+    content: '\f002';
+    font-weight: 900;
+    position: absolute;
+    left: 18px;
+    top: 8px;
+    font-size: 20px;
+    color: rgb(187, 187, 187);
+}
+.btn-upgrade {
+    border: none;
+    padding: 8px 18px;
+    border-radius: 100px;
+    background: #FFD96E;
+    color: #533200;
+    font-size: 15px;
+}
+
+.btn-upgrade i {
+    font-size: 12px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left .profile-bar{
+    padding-right: 120px;
+    display: flex;
+    align-items: center;
+}
+.header-left .profile-bar .my-photo img{
+    border-radius: 20px;
+}
+.btn.btn-danger.dropdown-toggle{
+    background-color: #4879a400;
+    color: black;
+    border: none;
+    padding: 0;
+}
+.info{
+    padding-right: 10px;
+}
+small{
+    font-size: 12px;
+    color: #919191;
+}
+.header-left .profile-bar .messages{
+    padding-right: 25px;
+    font-size: 20px;
+    position: relative;
+}
+.header-left .profile-bar .messages a{
+    color: black;
+}
+.header-left .profile-bar .messages::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f111';
+    color: red;
+    font-size: 7px;
+    position: absolute;
+    bottom: 18px;
+}
+.dropdown-menu li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+.dropdown-item p{
+    margin-bottom: 0;
+    margin-right: 6px;
+}
+.btn.btn-danger.dropdown-toggle:focus{
+    border-color: rgba(0, 0, 0, 0);
+}
+.dropdown-menu.show{
+    border-radius: 20px;
+    margin: 20px -33; 
+}
