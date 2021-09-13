@@ -296,8 +296,8 @@ main {
     background-color: #1bd741;
     /* width: 100vw; */
     /* position: absolute; */
-    left: 0px;
-    right: 0px;
+    /* margin-left: 0px;
+    margin-right: 0px; */
     margin-bottom: 80px;
 }
 .whatsapp{
@@ -351,3 +351,191 @@ main {
     height: 100px;
     width: 30px;
 }
+/* -------------------------- */
+.section-break{
+    margin-top: 100px;
+}
+.section-intro{
+    text-align: center;
+    color: #333333;
+}
+.trending-posts .trending-post{
+    background-image: url('../img/sea2.jpg');
+    height: 310px;
+    box-shadow: 0 1px 20px #3131311f;
+    border-radius: 10px;
+    position: relative;
+}
+.trending-post .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 45, 45, 0.486);
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
+    /* right: 0px;
+    bottom: 0px; */
+    /* margin: 20px; */
+    border-radius: 10px;
+}
+.trending-posts .trending-post-wrapper {
+    padding: 20px;
+    /* position: relative; */
+}
+.trending-content{
+    position: relative;
+    top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1200px){
+    .trending-content{
+        top: 108px;
+    }
+    .trending-content .article-writer{
+        top: -47px;
+    }
+}
+@media (max-width:768px){
+    .trending-content{
+        top: -2px;
+    }
+    .trending-posts .trending-post{
+        height: auto;
+    }
+}
+.trending-content .name{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    text-align: center;
+    padding: 3px 10px;
+}
+.trending-content .name p{
+    margin-bottom: 0;
+}
+.trending-content .content p{
+    text-shadow: -1px 2px 0px rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    padding: 20px;
+    text-align: center;
+}
+.trending-content .article-writer{
+    top: -18px;
+    max-width: 60px;
+}
+.footer-header {
+    background: #25D366;
+}
+.footer-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 15px 10px;
+}
+@media (max-width:500px){
+    .footer-header .container{
+        display: block;
+    }
+    .footer-header .text{
+        margin-bottom: 30px;
+    }
+    .whatsapp-btn{
+        font-size: smaller;
+    }
+}
+@media (max-width: 138px){
+    .whatsapp-btn{
+        font-size: 10px;
+    }
+}
+@media (max-width: 119px){
+    .whatsapp-btn{
+        font-size: 5px;
+    }
+}
+.footer-header .text{
+    display: flex;
+    align-items: center;
+}
+.footer-header .text i {
+    font-size: 45px;
+    margin-left: 12px;
+}
+
+.footer-header .text span {
+    font-size: 17px;
+    font-weight: 300;
+}
+.whatsapp-btn{
+    color: #13ae4d;
+    background: #fff;
+    border-radius: 100px;
+    padding: 8px 18px;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+.whatsapp-btn:hover{
+    color: #11833a;
+}
+a{
+    text-decoration: none;
+    color: #848884;
+}
+.map iframe {
+    border-radius: 10px;
+    border: 1px solid #d5d5d5;
+    height: 235px;
+}
+.footer-copy-right .code-box{
+    display: flex;
+    justify-content: flex-end;
+}
+ul.friend-links{
+    list-style: none;
+}
+.social-media-links{
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media-links a{
+    font-size: 16.5px;
+    background-color: #b8b8b8;
+    margin: 3px;
+    /* width: 25px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
+    width: 24px;
+    height: 24px;
+}
+.friend-link i{
+    color: black;
+}
+.friend-link:hover{
+    color: #6a6b6a;
+}
+.footer-text{
+    color: #6f6b69;
+    font-size: 17px;
+    font-weight: 250;
+}
+.footer-copy-right .content{
+    color: #6a6573;
+}
+.fab.fa-facebook-f{
+    margin-top: 4px;
+    font-size: 20px;
+}
+
